@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pinch Constellations</title>
+<style>
+  html, body { margin: 0; height: 100%; background: #05060d; color: #e8ecff; font-family: system-ui, sans-serif; overflow: hidden; }
+  #intro { position: fixed; left: 16px; top: 16px; max-width: 420px; font-size: 14px; line-height: 1.5; background: rgba(10,12,28,.75); padding: 12px 14px; border-radius: 10px; }
+  #intro h1 { font-size: 18px; margin: 0 0 6px; }
+  #intro a { color: #9fb4ff; }
+</style>
+<script type="importmap">
+{ "imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+} }
+</script>
+</head>
+<body>
+<div id="intro">
+  <h1>Pinch Constellations</h1>
+  Seated, hands-first star puzzle for Meta Quest. Pinch a star, drag to its neighbour, release to draw a line. Finish every faint outline to light the constellation.<br>
+  On Quest: press <b>Enter VR</b>, put controllers down. On desktop: drag with the mouse, or open <a href="?emulate">emulator mode</a>.
+</div>
+<script type="module" src="./main.js"></script>
+</body>
+</html>
