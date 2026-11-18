@@ -6,7 +6,7 @@ if (new URLSearchParams(location.search).has('emulate')) {
   try {
     const { XRDevice, metaQuest3 } = await import('https://esm.sh/iwer@2.8.0');
     const xrDevice = new XRDevice(metaQuest3);
-    xrDevice.installRuntime();
+    xrDevice.installRuntime({ forceInstall: true });
     xrDevice.primaryInputMode = 'hand';
     try {
       const { DevUI } = await import('https://esm.sh/@iwer/devui@2.8.0');
