@@ -59,7 +59,7 @@ const hudCanvas = document.createElement('canvas'); hudCanvas.width = 1024; hudC
 const hudCtx = hudCanvas.getContext('2d');
 const hudTex = new THREE.CanvasTexture(hudCanvas);
 const hud = new THREE.Mesh(new THREE.PlaneGeometry(0.4, 0.075), new THREE.MeshBasicMaterial({ map: hudTex, transparent: true }));
-hud.position.set(0, 0.3, PLANE_Z);
+hud.position.set(0, 0.245, PLANE_Z);
 scene.add(hud);
 function drawHud(title, sub) {
   hudCtx.clearRect(0, 0, 1024, 192);
